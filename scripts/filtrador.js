@@ -38,14 +38,14 @@ function showBarbers(companies) {
 
     console.log(companies);
     companies.forEach((company) => {
-        const { id, urlImg, nombre, direccion} = company;
+        const { id, urlImg, name, address} = company;
         const populares = document.createElement('p');
         populares.innerHTML = `
             <div class="card">
                 <img src="${urlImg}" class="imgCard" alt="..." ids = "${id}">
                 <div class="card-body">
-                    <h5 class="card-title">${nombre}</h5>
-                    <p class="card-text">${direccion}</p>
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">${address}</p>
                 </div>
             </div>   
         `;

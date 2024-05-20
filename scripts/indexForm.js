@@ -1,6 +1,4 @@
-function verifyPassword(event) {
-    event.preventDefault();
-
+function verifyPassword() {
     const password = document.getElementById("password").value;
     const confirmpassword = document.getElementById("confirmPassword").value;
     const messagePassword = document.getElementById("passwordMessage")

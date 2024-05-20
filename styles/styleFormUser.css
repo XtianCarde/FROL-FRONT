@@ -46,27 +46,27 @@ body {
 }
 
 
-#business-access{
+#users-access{
     margin: 40px 0 32px;
 }
-
-#business-access h3{
+#users-access h3{
     font-size: 17px;
     color: #AD974F;
 }
 
-#business-access button{
+#users-access button{
     padding: 10px 40px ;
 }
 
-#business-access button a{
+#users-access button a{
     padding: auto;
     color: white !important;
 }
 
-#business-access button a:hover{
+#users-access button a:hover{
     color: #AD974F !important;
 }
+
 
 #imgSection h2 {
     font-size: 30px;
@@ -173,31 +173,6 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#container-logo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#container-logo img{
-    width: 105px;
-    margin: 10px;
-}
-
-#container-logo button{
-    width: 200px;
-    height: 30px;
-    font-size: 12px;
-}
-
-#container-logo label{
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    font-weight: bold;
-}
-
-
 option {
     width: 300px;
     border: none;
@@ -252,9 +227,6 @@ button:hover:after {
     font-size: 13px;
     font-weight: bold;
 }
-
-
-
 
 @media only screen and (max-width: 768px) {
     .container {

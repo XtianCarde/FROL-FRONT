@@ -6,22 +6,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styleRegister.css">
-    <title>Login Register</title>
+    <link rel="stylesheet" href="./styles/styleRegister.css">
+    <title>Login | Business</title>
 </head>
 <body>
     <div class="container">
         <section id="image-container">
             <div id="imgSection">
-                <h2>Login to your account</h2>
-                <p>Don't you have an account? 
-                <br><a href="./registerBusiness.html">Register</a></p>
+                <div id="textSection">
+                    <h2>Login to your account</h2>
+                    <p>Don't you have an account? 
+                    <br><a href="./registerBusiness.html">REGISTER</a></p>
+                
+                    <div id="business-access">
+                        <h3>Do you want an incredible experience?</h3>
+                        <button><a href="./registerUser.html">Register a <b>User</b></a></button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <form action="" method="POST">
-            <a href="./index.html"><img id="logo" src="./img/register/logo FROL.PNG" alt="FROL logo"></a>
-            <h2>SIGNUP</h2>
+        <form action="http://localhost:3000/auth/business/login" class="formLoginBusiness" method="post" >
+            <a href=""><img id="logo" src="./img/register/FROL_Negro.png" alt="FROL logo"></a>
+            <h2>LOGIN BUSINESS</h2>
 
             <div>
                 <input type="email" placeholder="Email address" name="email" required>
@@ -37,11 +44,13 @@
                 </svg>
             </div>
 
-            <button type="button" onclick="verifyPassword(event)">Sign Up</button>
+            <button type="submit">Sign Up</button>
 
             <p id="passwordMessage"></p>
         </form>
     </div>
+    <script src="./scripts/token/token.js"> </script>
     <script src="./scripts/indexForm.js"></script>
+    
 </body>
 </html>
