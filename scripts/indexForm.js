@@ -1,11 +1,18 @@
 function verifyPassword() {
     const password = document.getElementById("password").value;
-    const confirmpassword = document.getElementById("confirmPassword").value;
-    const messagePassword = document.getElementById("passwordMessage")
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const messagePassword = document.getElementById("passwordMessage");
 
-    if (password == confirmpassword) {
-        messagePassword.innerHTML = "";
-    } else {
-        messagePassword.innerHTML = "Las contraseñas no coinciden. Vuelve a intertarlo.";
+    if (password !== confirmPassword) {
+        messagePassword.innerHTML = "Las contraseñas no coinciden. Vuelve a intentarlo.";
+        return false; 
     }
+
+    if (password.length < 8) {
+        messagePassword.innerHTML = "La contraseña debe tener al menos 8 caracteres.";
+        return false; 
+    }
+
+    messagePassword.innerHTML = "";
+    return true; 
 }
