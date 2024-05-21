@@ -44,7 +44,7 @@ form.addEventListener("submit", async () => {
     // Manejo de respuesta (e.g., redirección, mostrar mensaje, etc.)
 });
 
-form.addEventListener("submit", async () => {
+/* form.addEventListener("submit", async () => {
     
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
@@ -61,4 +61,4 @@ form.addEventListener("submit", async () => {
     console.log(result);
 
     // Manejo de respuesta (e.g., redirección, mostrar mensaje, etc.)
-});
+}); */
